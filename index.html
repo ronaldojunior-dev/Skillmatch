@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>SkillMatch Web - Comparador de Vagas de TI</title>
+    <meta name="description" content="Insira suas habilidades e veja seu nível de compatibilidade técnica com vagas de desenvolvedor Front-End.">
+    
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 24 24' fill='%230056b3'><path d='M12 2L2 22h20L12 2zm0 4l6.5 13h-13L12 6z'/></svg>" alt="Logotipo em formato de triângulo azul apontando para cima">
+            <h1>SkillMatch Web</h1>
+        </div>
+    </header>
+
+    <main class="main-content">
+        
+        <section class="section-profile">
+            <h2>Cadastro do Perfil Técnico</h2>
+            
+            <form id="form-perfil" novalidate>
+                <div class="form-group">
+                    <label for="input-nome">Seu Nome Completo:</label>
+                    <input type="text" id="input-nome" placeholder="Ex: Maria Souza">
+                </div>
+
+                <div class="form-group">
+                    <label for="input-area">Sua Área de Atuação:</label>
+                    <input type="text" id="input-area" placeholder="Ex: Front-End Júnior">
+                </div>
+
+                <div class="form-group">
+                    <label for="input-experiencia">Tempo de Experiência (em meses):</label>
+                    <input type="number" id="input-experiencia" min="0" placeholder="Ex: 6">
+                </div>
+
+                <div class="form-group">
+                    <label for="input-habilidades">Suas Habilidades (separe por vírgula):</label>
+                    <input type="text" id="input-habilidades" placeholder="Ex: HTML, CSS, JavaScript, Flexbox">
+                </div>
+
+                <div id="form-erro" class="error-summary" hidden></div>
+
+                <div class="form-actions">
+                    <button type="submit">Analisar Vagas</button>
+                    <button type="button" id="btn-limpar" class="button-secondary">Nova Análise</button>
+                </div>
+            </form>
+        </section>
+
+        <div id="status-rede" aria-live="assertive" style="margin-bottom: 20px;"></div>
+
+        <section id="section-resultados" class="section-results" hidden>
+            <div id="container-destaque" class="card-destaque"></div>
+
+            <h2>Vagas Disponíveis Encontradas</h2>
+            <div id="grid-vagas" class="vagas-grid"></div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; Copyright © 2026 SkillMatch Web.</p>
+    </footer>
+
+    <script type="module" src="./assets/scripts/main.js"></script>
+</body>
+</html>
