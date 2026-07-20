@@ -21,6 +21,7 @@ let botaoLimpar = document.getElementById("btn-limpar");
 let bancoDeVagasLocal = [];
 
 let registrarNovaAnalise = criarContadorDeAnalises();
+ 
 
 function resetarEstadoDaTela() {
     secaoDeResultados.hidden = true;
