@@ -24,6 +24,7 @@ SkillMatch é uma aplicação simples para comparar o perfil de um candidato com
 2. Ative o Live Server.
 3. Acesse a página no endereço mostrado pelo servidor.
 4. OU acesse o repositório: https://github.com/ronaldojunior-dev/Skillmatch.git
+5. Acesso ao trello: https://trello.com/invite/b/69dd890a5d3f69184dd828a9/ATTI5e5da7845770ca5c9be60598439bcf5d82CFDDA1/sctec
 
 ## Estrutura do projeto
 
